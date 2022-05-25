@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click on the button to copy the text from the text field. Try to paste the text (e.g. ctrl+v) afterwards in a different window, to see the effect.</p>
+
+
+<script>
+function myFunction(event) {
+  const commonParent = event.currentTarget.parentElement;
+  let inputElement = null;
+  for (node of commonParent.childNodes) {
+    if(node instanceof HTMLInputElement) {
+        inputElement = node;
+      break;
+    } 
+  }
+ 
+  inputElement.select();
+  inputElement.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  
+  event.currentTarget.innerText = `Copied: ${inputElement.value}`;
+}
+
+function outFunc(event) {
+    event.currentTarget.innerText = "Copy to clipboard";
+}
+</script>
+<h6> OFF3
+<div class="post-wrapper">
+  <input type="text" value="No se establece comunicación" id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+<h6> DOCS CHECK IN 
+<div class="post-wrapper">
+  <input type="text" value="PAP contacta por incidencia en revisión de la documentación en check-in, se informa debe ser presencial en el aeropuerto."id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+<h6> COVID-19
+<div class="post-wrapper">
+  <input type="text" value="PAP consulta requisitos asociados a COVID, se envía enlace de información orientativa."id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+<h6> PIN
+<div class="post-wrapper">
+  <input type="text" value="PAP contacta por gestión de PIN, se confirman datos de cuenta y se envía correo electrónico para restablecer contraseña." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+<h6> CHANGE
+<div class="post-wrapper">
+  <input type="text" value="PAP solicita cambio, se informa bajo condiciones de tarifa y debe contactar a Serviberia." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+
+<h6> CANCEL
+<div class="post-wrapper">
+  <input type="text" value="PAP solicita cancelación de vuelo, se remite a Serviberia." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+
+<h6> BAGBUY
+<div class="post-wrapper">
+  <input type="text" value="PAP informado de las alternativas disponibles para adquirir equipaje adicional." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+<h6> BAGSIZE
+<div class="post-wrapper">
+  <input type="text" value="PAP consulta medidas/condiciones del servicio de equipaje cabina, bodega." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+<h6> BAGLOST
+<div class="post-wrapper">
+  <input type="text" value="PAP contacta por incidencia equipaje, se redirige a la central de equipajes." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+<h6> BUY
+<div class="post-wrapper">
+  <input type="text" value="PAP contacta por compra de billete, se redirige a la web." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+<h6> UPGRADE
+<div class="post-wrapper">
+  <input type="text" value="PAP consulta cómo hacer un Upgrade, se informan las alternativas." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+<h6> BILL1
+<div class="post-wrapper">
+  <input type="text" value="PAP contacta por petición de factura, se redirige a la web, reporta incidencia y se confirman datos para corregirlo." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+<h6> RT1
+<div class="post-wrapper">
+  <input type="text" value="PAP consulta por confirmación, reenvió de itinerario, datos asociados a la reserva" id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+<h6> CALL
+<div class="post-wrapper">
+  <input type="text" value="PAP solicita contactar vía telefónica, se envía enlace centros de contacto Serviberia." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+  
+</div>
+<h6> CONDICIONES DE BONO
+<div class="post-wrapper">
+  <input type="text" value="PAP es informado sobre las condiciones de bono." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+<h6> UMNR
+<div class="post-wrapper">
+  <input type="text" value="PAP consulta condiciones del servicio de acompañamiento a menores." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+<h6> MEDAS
+<div class="post-wrapper">
+  <input type="text" value="PAP solicita servicio de asistencia, se confirma ha sido asignado. " id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+<h6> GIFTCARD
+<div class="post-wrapper">
+  <input type="text" value="PAP consulta condiciones uso de tarjeta de regalo." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+<h6> FOODSPEQ
+<div class="post-wrapper">
+  <input type="text" value="PAP contacta para asignar comidas especiales, se informa la opción está disponible a tráves de gestión de reservas." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+<h6> WRONG NAME
+<div class="post-wrapper">
+  <input type="text" value="PAP solicita correción en el nombre/apellido de titular de billete, se remite a Serviberia." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+<h6> PET
+<div class="post-wrapper">
+  <input type="text" value="PAP contacta para confirmar disponibilidad de servicio PET" id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+<h6> PAY FP1
+<div class="post-wrapper">
+  <input type="text" value="PAP consulta en relación a  formas de pago disponibles." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    Copy to clipboard
+  </button>
+</div>
+
+</body>
+</html>
