@@ -1,37 +1,279 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<body>
 
-You can use the [editor on GitHub](https://github.com/v1v13/SFnotes/edit/gh-pages/docs/index.md) to maintain and preview the content for your website in Markdown files.
+  <body 
+  style="background-color:rgb(175, 80, 219);" style="font-family:verdana"></body>
+  <body>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+      
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<script>
+function myFunction(event) {
+  const commonParent = event.currentTarget.parentElement;
+  let inputElement = null;
+  for (node of commonParent.childNodes) {
+    if(node instanceof HTMLInputElement) {
+        inputElement = node;
+      break;
+    } 
+  }
+ 
+  inputElement.select();
+  inputElement.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  
+  event.currentTarget.innerText = `Copied: ${inputElement.value}`;
+}
 
-```markdown
-Syntax highlighted code block
+function outFunc(event) {
+    event.currentTarget.innerText = "GO!";
+}
+</script> 
 
-# Header 1
-## Header 2
-### Header 3
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:25px;'>&#128747;</span>
+  <input type="text" value="PAP contacta por incidencia en check-in, se informa debe ser presencial en el aeropuerto."id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    &#10145
+  </button>
+</div>
 
-- Bulleted
-- List
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:25px;'>&#128566;</span>
+  <input type="text" value="No se establece comunicación" id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    &#10145
+  </button>
+</div>
 
-1. Numbered
-2. List
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:35px;'>&#129503;</span>
+  <input type="text" value="PAP consulta requisitos asociados a COVID, se remite a la web orientativa."id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    &#10145
+  </button>
+</div>
 
-**Bold** and _Italic_ and `Code` text
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:35px;'>&#10067;</span>
+  <input type="text" value="PAP consulta por confirmación, reenvio de itinerario, datos asociados a la reserva" id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    &#10145
+  </button>
+</div>
 
-[Link](url) and ![Image](src)
-```
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:35px;'>&#129497;</span>
+  <input type="text" value="PAP solicita cambio, se informa bajo condiciones de tarifa y debe contactar a Serviberia." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    &#10145
+  </button>
+</div>
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:25px;'>&#10060;</span>
+  <input type="text" value="PAP solicita cancelar de vuelo, se remite a Serviberia." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    &#10145
+  </button>
+</div>
 
-### Jekyll Themes
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:25px;'>&#128188;</span>
+  <input type="text" value="PAP informado de las alternativas disponibles para adquirir equipaje adicional." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    &#10145
+  </button>
+</div>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/v1v13/SFnotes/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:35px;'>&#127890;</span>
+  <input type="text" value="PAP consulta medidas condiciones del servicio de equipaje cabina, bodega." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    &#10145
+  </button>
+</div>
 
-### Support or Contact
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:25px;'>&#128708;</span>
+  <input type="text" value="PAP contacta por incidencia equipaje, se redirige a la central de equipajes." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    &#10145
+  </button>
+</div>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:25px;'>&#128722;</span>
+  <input type="text" value="PAP contacta por compra disponibilidad de vuelo se redirige a la web." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    &#10145
+  </button>
+</div>
+
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:25px;'>&#127385;</span>
+  <input type="text" value="PAP contacta por Upgrade, se informan las alternativas." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    &#10145
+  </button>
+</div>
+
+<div class="post-wrapper"  style="text-align:center">
+  <span style='font-size:25px;'>&#128196;</span>
+  <input type="text" value="PAP solicita factura, se redirige a la web, reporta incidencia y se confirman datos para corregirlo." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    &#10145
+  </button>
+</div>
+
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:25px;'>&#128181;</span>
+  <input type="text" value="PAP consulta formas de pago disponibles." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    &#10145
+  </button>
+</div>
+
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:25px;'>&#127915;</span>
+  <input type="text" value="PAP es informado sobre las condiciones de bono." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    &#10145
+  </button>
+</div>
+
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:25px;'>&#127873;</span>
+  <input type="text" value="PAP consulta condiciones uso de tarjeta de regalo." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    &#10145
+  </button>
+</div>
+
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:25px;'>&#128124;</span>
+  <input type="text" value="PAP consulta condiciones del servicio de acompañamiento a menores." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    &#10145
+  </button>
+</div>
+
+<div class="post-wrapper" style="text-align:center">
+    <span style='font-size:25px;'>&#128116;</span>
+    <input type="text" value="PAP solicita servicio de asistencia, se confirma ha sido asignado. " id="myInput">
+    <br>
+    <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+      &#10145
+    </button>
+</div>
+
+<div class="post-wrapper" style="text-align:center">
+      <span style='font-size:25px;'>&#127828;</span>
+      <input type="text" value="PAP contacta para asignar comidas especiales, se informa la opción está disponible desde gestión de reservas." id="myInput">
+      <br>
+      <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+        &#10145
+      </button>
+</div>
+
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:25px;'>&#128186;</span>
+      <input type="text" value="PAP contacta por seleccion cambio reembolso asientos, se informan las condiciones y alternativas del servicio" id="myInput">
+      <br>
+      <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+        &#10145
+      </button>
+</div>
+
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:25px;'>&#128054;</span>
+        <input type="text" value="PAP contacta para confirmar disponibilidad condiciones asignación de servicio mascota en bodega cabina" id="myInput">
+        <br>
+        <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+          &#10145
+        </button>
+</div>
+
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:25px;'>&#127928;</span>
+        <input type="text" value="PAP consulta por confirmación asignación de equipaje especial" id="myInput">
+        <br>
+        <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+          &#10145
+        </button>
+</div>      
+
+<div class="post-wrapper" style="text-align:center">
+        <span style='font-size:25px;'>&#128179;</span>
+        <input type="text" value="PAP solicita de PIN, se confirman datos de cuenta y se envía correo electrónico" id="myInput">
+        <br>
+        <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+          &#10145
+        </button>
+</div>
+
+<div class="post-wrapper" style="text-align:center">
+        <span style='font-size:25px;'>&#127775;</span>
+              <input type="text" value="PAP contacta por carga de avios, se indica el procedimiento" id="myInput">
+              <br>
+              <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+                &#10145
+              </button>
+</div>
+
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:25px;'>&#128236;</span>
+  <input type="text" value="PAP contacta por incidencia iberia plus, se remite a contacto iberia" id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+  &#10145
+  </button>
+</div>
+
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:25px;'>&#128222;</span>
+  <input type="text" value="PAP solicita lineas de atención telefónica, se enlace centros de contacto Serviberia." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+  &#10145
+  </button>
+</div>
+
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:25px;'>&#128587;</span>
+  <input type="text" value="PAP solicita correccion en el nombre apellido de titular de billete, se remite a Serviberia." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    &#10145
+  </button>
+</div>
+
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:25px;'>&#128545;</span>
+  <input type="text" value="PAP contacta por reclamación justificante se remite a centro de reclamaciones en la web" id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+  &#10145
+  </button>
+</div>
+
+</body>
+</html>
