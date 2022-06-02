@@ -37,16 +37,27 @@ function outFunc(event) {
 }
 </script> 
 
-<div class="post-wrapper" style="text-align:center">
-  <span style='font-size:40px;'>&#128747;</span>
-  <input type="text" value="PAP contacta por incidencia en check-in, se informa debe ser presencial en el aeropuerto."id="myInput">
-  <br>
-  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
-    &#9889
-  </button>
-</div>
+<style>
+table {
+  font-family: arial, sans-serif;
 
-<div class="post-wrapper" style="text-align:center">
+  width: 100%;
+}
+
+td, th {
+  
+  text-align: center;
+  padding: 15px;
+}
+
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+<td>                                        
+<div class="post-wrapper"style="text-align:center">
   <span style='font-size:40px;'>&#128566;</span>
   <input type="text" value="No se establece comunicación" id="myInput">
   <br>
@@ -54,7 +65,10 @@ function outFunc(event) {
     &#9889
   </button>
 </div>
+</td>
+                                                                 
 
+<td> 
 <div class="post-wrapper" style="text-align:center">
   <span style='font-size:40px;'>&#128567;</span>
   <input type="text" value="PAP consulta requisitos asociados a COVID, se remite a la web orientativa."id="myInput">
@@ -63,7 +77,44 @@ function outFunc(event) {
     &#9889
   </button>
 </div>
-
+</td>
+                                                                 
+<td>                                                                 
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:40px;'>&#x1F920;</span>
+  <input type="text" value="PAP consulta la documentación migratoria requerida, se redirige a la web informativa." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+  &#9889
+  </button>
+</div> 
+</td>                                                                 
+</tr>
+                                                                 
+<tr>
+<td>
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:40px;'>&#128722;</span>
+  <input type="text" value="PAP contacta por compra disponibilidad de vuelo se redirige a la web." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    &#9889
+  </button>
+</div> 
+</td> 
+                                                                 
+<td>
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:40px;'>&#x1F9D0;</span>
+  <input type="text" value="PAP contacta por reserva sin emision, se encuentra localizador." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+  &#9889
+  </button>
+</div> 
+</td> 
+                                                                 
+<td>                                                                
 <div class="post-wrapper" style="text-align:center">
   <span style='font-size:40px;'>&#10067;</span>
   <input type="text" value="PAP consulta por confirmación, reenvio de itinerario, datos asociados a la reserva" id="myInput">
@@ -71,17 +122,35 @@ function outFunc(event) {
   <button onclick="myFunction(event)" onmouseout="outFunc(event)">
     &#9889
   </button>
-</div>
+</div> 
+</td>
+</tr>                                                                 
 
+                                                                 
+<tr>
+<td>                                                                
+<div class="post-wrapper" 
+  <span style='font-size:40px;'>&#128747;</span>
+  <input type="text" value="PAP contacta por incidencia en check-in, se informa debe ser presencial en el aeropuerto."id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    &#9889
+  </button>
+</div>
+</td>                                                                
+
+<td>   
 <div class="post-wrapper" style="text-align:center">
-  <span style='font-size:40px;'>&#127754;</span>
+  <span style='font-size:40px;'>&#x1F9D9;</span>
   <input type="text" value="PAP solicita cambio, se informa bajo condiciones de tarifa y debe contactar a vía telefónica." id="myInput">
   <br>
   <button onclick="myFunction(event)" onmouseout="outFunc(event)">
     &#9889
   </button>
 </div>
-
+</td> 
+                                                                 
+<td>                                                                  
 <div class="post-wrapper" style="text-align:center">
   <span style='font-size:40px;'>&#10060;</span>
   <input type="text" value="PAP solicita cancelar de vuelo, se remite a contactar vía telefónica." id="myInput">
@@ -90,7 +159,11 @@ function outFunc(event) {
     &#9889
   </button>
 </div>
-
+</td> 
+ 
+                                                                 
+<tr> 
+<td>                                                                 
 <div class="post-wrapper" style="text-align:center">
   <span style='font-size:40px;'>&#128188;</span>
   <input type="text" value="PAP informado de las alternativas disponibles para adquirir equipaje adicional." id="myInput">
@@ -99,7 +172,9 @@ function outFunc(event) {
     &#9889
   </button>
 </div>
-
+</td>
+                                                                 
+<td>                                                                 
 <div class="post-wrapper" style="text-align:center">
   <span style='font-size:40px;'>&#127890;</span>
   <input type="text" value="PAP consulta medidas condiciones del servicio de equipaje cabina bodega." id="myInput">
@@ -108,7 +183,9 @@ function outFunc(event) {
     &#9889
   </button>
 </div>
+</td>
 
+<td>                                                                  
 <div class="post-wrapper" style="text-align:center">
   <span style='font-size:40px;'>&#128708;</span>
   <input type="text" value="PAP contacta por incidencia equipaje, se redirige a la central de equipajes." id="myInput">
@@ -117,16 +194,12 @@ function outFunc(event) {
     &#9889
   </button>
 </div>
+</td>
+</tr>
 
-<div class="post-wrapper" style="text-align:center">
-  <span style='font-size:40px;'>&#128722;</span>
-  <input type="text" value="PAP contacta por compra disponibilidad de vuelo se redirige a la web." id="myInput">
-  <br>
-  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
-    &#9889
-  </button>
-</div>
-
+                                                                 
+<tr> 
+<td>                                                                  
 <div class="post-wrapper" style="text-align:center">
   <span style='font-size:40px;'>&#127385;</span>
   <input type="text" value="PAP contacta por Upgrade, se informan las alternativas." id="myInput">
@@ -135,7 +208,9 @@ function outFunc(event) {
     &#9889
   </button>
 </div>
+</td>
 
+<td>                                                                  
 <div class="post-wrapper"  style="text-align:center">
   <span style='font-size:40px;'>&#128196;</span>
   <input type="text" value="PAP solicita factura, se redirige a la web, reporta incidencia y se confirman datos para corregirlo." id="myInput">
@@ -144,7 +219,9 @@ function outFunc(event) {
     &#9889
   </button>
 </div>
+</td>                                                                 
 
+<td>                                                                 
 <div class="post-wrapper" style="text-align:center">
   <span style='font-size:40px;'>&#128181;</span>
   <input type="text" value="PAP consulta formas de pago disponibles." id="myInput">
@@ -153,7 +230,12 @@ function outFunc(event) {
     &#9889
   </button>
 </div>
+</td>                                                                                                                                 
+</tr>
 
+                                                                 
+<tr>
+<td>                                                                 
 <div class="post-wrapper" style="text-align:center">
   <span style='font-size:40px;'>&#127915;</span>
   <input type="text" value="PAP es informado sobre las condiciones de bono." id="myInput">
@@ -162,7 +244,18 @@ function outFunc(event) {
     &#9889
   </button>
 </div>
-
+<td>                                                                 
+</td>
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:40px;'>#x1F4A2;</span>
+  <input type="text" value="PAP contacta por incidencia en el pago con bono." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+  &#9889
+  </button>
+</div>
+</td>  
+<td>                                                                  
 <div class="post-wrapper" style="text-align:center">
   <span style='font-size:40px;'>&#127873;</span>
   <input type="text" value="PAP consulta condiciones uso de tarjeta de regalo." id="myInput">
@@ -171,7 +264,12 @@ function outFunc(event) {
     &#9889
   </button>
 </div>
-
+</td>                                                                 
+</tr>
+                                                                 
+                                                                 
+<tr> 
+<td>                                                                  
 <div class="post-wrapper" style="text-align:center">
   <span style='font-size:40px;'>&#128124;</span>
   <input type="text" value="PAP consulta condiciones del servicio de acompañamiento a menores." id="myInput">
@@ -180,7 +278,9 @@ function outFunc(event) {
     &#9889
   </button>
 </div>
-
+</td> 
+                                                                 
+<td>                                                                 
 <div class="post-wrapper" style="text-align:center">
     <span style='font-size:40px;'>&#128116;</span>
     <input type="text" value="PAP solicita servicio de asistencia, se confirma ha sido asignado." id="myInput">
@@ -189,25 +289,9 @@ function outFunc(event) {
       &#9889
     </button>
 </div>
+</td>                                                                    
 
-<div class="post-wrapper" style="text-align:center">
-      <span style='font-size:40px;'>&#127830;</span>
-      <input type="text" value="PAP contacta para asignar comidas especiales, se informa la opción está disponible desde gestión de reservas." id="myInput">
-      <br>
-      <button onclick="myFunction(event)" onmouseout="outFunc(event)">
-        &#9889
-      </button>
-</div>
-
-<div class="post-wrapper" style="text-align:center">
-  <span style='font-size:40px;'>&#128186;</span>
-      <input type="text" value="PAP contacta por confirmación seleccion cambio reembolso asientos, se informan las condiciones y alternativas del servicio" id="myInput">
-      <br>
-      <button onclick="myFunction(event)" onmouseout="outFunc(event)">
-        &#9889
-      </button>
-</div>
-
+<td>                                                                   
 <div class="post-wrapper" style="text-align:center">
   <span style='font-size:40px;'>&#128054;</span>
         <input type="text" value="PAP contacta por confirmación disponibilidad condiciones de asignación de servicio mascota en bodega cabina" id="myInput">
@@ -216,7 +300,58 @@ function outFunc(event) {
           &#9889
         </button>
 </div>
+</td>                                                                       
+</tr>                                                                       
 
+<tr> 
+<td>                                                                                                                                         
+<div class="post-wrapper" style="text-align:center">
+      <span style='font-size:40px;'>&#x1F955;</span>
+      <input type="text" value="PAP contacta para asignar comidas especiales, se informa la opción está disponible desde gestión de reservas." id="myInput">
+      <br>
+      <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+        &#9889
+      </button>
+</div>
+</td>                                                                     
+                                                                     
+<td>                                                                      
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:40px;'>&#x1F950;</span>
+  <input type="text" value="PAP consulta por menú a bordo se brinda la información sobre las condiciones del sevicio." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+  &#9889
+  </button>
+</div>
+</td>                                                                   
+                                                                                                                                 
+<td> 
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:40px;'>&#x1F194;</span>
+  <input type="text" value="PAP solicita correccion en el nombre apellido de titular de billete, se remite a contactar vía telefónica." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+    &#9889
+  </button>
+</div>
+</td>                                                                       
+</tr> 
+
+                                                                 
+<tr> 
+<td>                                                                  
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:40px;'>&#128186;</span>
+      <input type="text" value="PAP contacta por confirmación seleccion cambio reembolso asientos, se informan las condiciones y alternativas del servicio" id="myInput">
+      <br>
+      <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+        &#9889
+      </button>
+</div>
+</td> 
+
+<td> 
 <div class="post-wrapper" style="text-align:center">
   <span style='font-size:40px;'>&#127928;</span>
         <input type="text" value="PAP consulta por información confirmación asignación de equipaje especial" id="myInput">
@@ -225,7 +360,23 @@ function outFunc(event) {
           &#9889
         </button>
 </div>      
+</td> 
+                                                                       
+<td>                                                                        
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:40px;'>&#128545;</span>
+  <input type="text" value="PAP contacta condiciones de trasnporte de  líquidos medicamentos alcohol en equiapaje de mano bodega." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+  &#9889
+  </button>
+</div> 
+</td>                                                                       
+</tr>                                                                  
+                                                                 
 
+<tr> 
+<td>                                                                                                                                         
 <div class="post-wrapper" style="text-align:center">
         <span style='font-size:40px;'>&#128179;</span>
         <input type="text" value="PAP solicita de PIN, se confirman datos de cuenta y se envía correo electrónico" id="myInput">
@@ -234,7 +385,9 @@ function outFunc(event) {
           &#9889
         </button>
 </div>
-
+</td>
+                                                                       
+<td>                                                                        
 <div class="post-wrapper" style="text-align:center">
         <span style='font-size:40px;'>&#127775;</span>
               <input type="text" value="PAP contacta por carga de avios, se indica el procedimiento" id="myInput">
@@ -243,7 +396,9 @@ function outFunc(event) {
                 &#9889
               </button>
 </div>
-
+</td>
+                                                                             
+<td>                                                                              
 <div class="post-wrapper" style="text-align:center">
   <span style='font-size:40px;'>&#128236;</span>
   <input type="text" value="PAP contacta por incidencia iberia plus, se remite a contacto iberia" id="myInput">
@@ -252,7 +407,23 @@ function outFunc(event) {
   &#9889
   </button>
 </div>
+</td>                                                                       
+</tr>                                                                                                                                  
+                                                                 
 
+<tr> 
+<td> 
+<div class="post-wrapper" style="text-align:center">
+  <span style='font-size:40px;'>&#x1F4B1;</span>
+  <input type="text" value="PAP solicita información comprobante reembolso." id="myInput">
+  <br>
+  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
+  &#9889
+  </button>
+</div>
+</td> 
+                                                                 
+<td>                                                                  
 <div class="post-wrapper" style="text-align:center">
   <span style='font-size:40px;'>&#128222;</span>
   <input type="text" value="PAP solicita lineas de atención telefónica, se enlace centros de contacto en todo el mundo." id="myInput">
@@ -261,16 +432,9 @@ function outFunc(event) {
   &#9889
   </button>
 </div>
+</td> 
 
-<div class="post-wrapper" style="text-align:center">
-  <span style='font-size:40px;'>&#128125;</span>
-  <input type="text" value="PAP solicita correccion en el nombre apellido de titular de billete, se remite a contactar vía telefónica." id="myInput">
-  <br>
-  <button onclick="myFunction(event)" onmouseout="outFunc(event)">
-    &#9889
-  </button>
-</div>
-
+<td>
 <div class="post-wrapper" style="text-align:center">
   <span style='font-size:40px;'>&#128545;</span>
   <input type="text" value="PAP contacta por reclamación justificante se remite a centro de reclamaciones en la web" id="myInput">
@@ -279,17 +443,11 @@ function outFunc(event) {
   &#9889
   </button>
 </div>
+</td>                                                                       
+</tr>                                                                 
 
+                                                                
 </body>
-</html>
- 
-                                                                 
-PAP consulta por menú a bordo se brinda la información sobre las condiciones del sevicio.
-PAP consulta la documentación migratoria requerida, se redirige a la web informativa.
-PAP contacta por incidencia en el pago con bono.
-PAP solicita información comprobante reembolso.
-PAP contacta para modificar correo electrónico  y reenvio de billete.
-PAP contacta condiciones de trasnporte de  líquidos medicamentos alcohol en equiapaje de mano bodega.
-PAP contacta por seguimiento de expediente.
-PAP contacta por reserva sin emision, se brinda localizador.
+</html>                                                           
+
                                                                  
